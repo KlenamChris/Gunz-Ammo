@@ -185,7 +185,6 @@ body {
 }
 
 .skill__flex {
-  margin-top: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,6 +349,12 @@ footer {
   color: var(--white);
 }
 
+@media (width < 768px) {
+  .skill__container {
+    padding-top: 40%;
+  }
+}
+
 @media (width > 768px) {
   nav {
     background-color: var(--primary-color);
@@ -384,6 +389,9 @@ footer {
     z-index: 1;
   }
 
+  .skill__container{
+    padding-top: 10%;
+  }
   .skill__flex {
     gap: 2rem;
   }
