@@ -1,20 +1,20 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <div class="nav__bar">
         <div class="nav__header">
           <div class="nav__logo">
-            <a href="#">LENNON</a>
+            <a href="./index.html">LENNON</a>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
@@ -29,35 +29,51 @@
         </ul>
       </div>
     </nav>
+    <div class="section__container  footer__container contact__container" id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        I'd love to hear from you! Whether you have a project in mind, a
+        question about my work, or just want to connect, feel free to reach out.
+        You can contact me via email or through my social media channels. I am
+        always excited to collaborate with like-minded individuals and explore
+        new opportunities.
+      </p>
 
-      <div class="section__container footer__container" id="contact">
-        <h2>Contact</h2>
-        <p>
-          I'd love to hear from you! Whether you have a project in mind, a
-          question about my work, or just want to connect, feel free to reach
-          out. You can contact me via email or through my social media channels.
-          I am always excited to collaborate with like-minded individuals and
-          explore new opportunities.
-        </p>
-        <div class="mail__to">
-          <a href="#">
-            <span><i class="ri-mail-line"></i></span>
-            lenitoyoshi911@gmail.com
-          </a>
+      <form
+        action="your-server-side-script"
+        method="POST"
+        class="contact__form"
+      >
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
-        <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-google-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-twitter-x-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-          </li>
-        </ul>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="mail__to">
+        <a href="mailto:ahukporty@yahoo.com">
+          <span><i class="ri-mail-line"></i></span>
+          ahukporty@yahoo.com
+        </a>
       </div>
+      <ul class="footer__socials">
+        <li>
+          <a href="https://x.com/@user23v6"
+            ><i class="ri-twitter-x-fill"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
